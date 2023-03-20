@@ -1,0 +1,50 @@
+.splash {
+  @include padding-rem(103, 0, 200, 0);
+  position: relative;
+  z-index: 1;
+  background: url("../images/splash-bg.png");
+  background-size: cover;
+  background-position-y: -5vw;
+
+  &__title {
+    max-width: 814px;
+    margin-bottom: 88px;
+    @include font-size(48, 900, 58px);
+    text-transform: uppercase;
+    color: $color-text-black;
+
+    &-highlight {
+      color: $color-secondary;
+    }
+  }
+
+  &__description {
+    @include font-size(20, 400, 24px);
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+.description {
+  &__title {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  &__list {
+    margin-bottom: 80px;
+    list-style-type: none;
+
+    &-item {
+      margin-bottom: 5px;
+
+      &:before {
+        content: "-";
+        padding: 0 7px;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.button {
+  box-sizing: border-box;
+  display: inline-block;
+  min-width: 183px;
+  @include padding-rem(15, 31, 15, 31);
+  @include font-size(13, 400, 16px);
+  text-transform: uppercase;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+
+  &--primary {
+    background-color: $color-secondary;
+    border: 1px solid #fff;
+    color: $color-text-white;
+
+    &:hover {
+      background-color: #fff;
+      border-color: $gray;
+      color: $color-text-black;
+    }
+  }
+
+  &--secondary {
+    background-color: #fff;
+    border: 1px solid $gray;
+    color: $color-text-black;
+
+    &:hover {
+      background-color: $color-secondary;
+      color: $color-text-white;
+    }
+  }
+}

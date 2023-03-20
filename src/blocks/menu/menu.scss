@@ -1,0 +1,21 @@
+.menu {
+  &__list {
+    display: flex;
+    gap: 60px;
+
+    &-link {
+      @include font-size(13, 600, 16px);
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $color-text-white;
+
+      &:hover {
+        color: $color-secondary;
+      }
+    }
+
+    &-link--active {
+      color: $color-secondary;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.logo {
+  @include font-size(28, 800, 33px);
+  color: $color-text-white;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &__highlight {
+    color: $color-secondary;
+  }
+}

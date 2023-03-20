@@ -1,0 +1,13 @@
+.header {
+  @include padding-rem(33, 0, 33, 0);
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  background-color: rgba($color-main, 0.9);
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
