@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   flex-grow: 1;
   gap: 30px;
-  row-gap: 25px;
+  row-gap: 27px;
 
   &__input,
   &__select:not(&__input--file) {
@@ -15,6 +15,30 @@
       content: "";
       flex: 0 0 100%;
       height: 0;
+    }
+  }
+
+  &__range-slider {
+    flex-basis: 770px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+
+    &-header {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    &-title,
+    &-value {
+      @include font-size(18, 400, 22px);
+      color: $color-text-white;
+    }
+
+    &-input {
+      display: none;
     }
   }
 

@@ -96,6 +96,16 @@
               </select>
               <input type="email" name="email" placeholder="Ваш e-mail" class="form__input input">
               <input type="text" name="name" placeholder="Вашe имя" class="form__input input">
+              <div class="form__range-slider">
+                <div class="form__range-slider-header">
+                  <div class="form__range-slider-title">
+                    Sed ut perspiciatis, unde omnis iste natus
+                  </div>
+                  <div class="form__range-slider-value">0 %</div>
+                  <input type="text" name="range-value" class="form__range-slider-input form__input input" placeholder="0%">
+                </div>
+                <div id="range-slider" class="range-slider"></div>
+              </div>
               <div class="input__wrapper">
                 <input type="file" name="file" id="input__file" class="form__input input__file input">
                 <label for="input__file" class="input__file-button">
@@ -105,7 +115,7 @@
                   <span class="input__file-button-text">Прикрепить файл</span>
                </label>
               </div>
-              <button class="form__button button button--primary">Отправить</button>
+              <button type="submit" class="form__button button button--primary">Отправить</button>
             </form>
           </section>
         </div>
