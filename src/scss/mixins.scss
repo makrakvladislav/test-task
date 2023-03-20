@@ -1,0 +1,56 @@
+/* FONT_SIZE */
+@mixin font-size($font-size, $font-weight, $line-height: normal, $letter-spacing: normal) {
+  font-weight: $font-weight;
+  font-size: calc($font-size / 16) + em;
+
+  @if $line-height == normal {
+    line-height: normal;
+  } @else {
+    line-height: $line-height;
+  }
+
+  @if $letter-spacing == normal {
+    letter-spacing: normal;
+  } @else {
+    letter-spacing: #{$letter-spacing}em;
+  }
+}
+
+/* PX TO EM PADDINGS */
+@mixin padding-em($top, $right, $bottom, $left) {
+  padding: calc($top / 16) + em calc($right / 16) + em calc($bottom / 16) + em calc($left / 16) + em;
+}
+
+@mixin padding-rem($top, $right, $bottom, $left) {
+  padding: calc(($top / 16)) + rem calc(($right / 16)) + rem calc(($bottom / 16)) + rem calc(($left / 16)) + rem;
+}
+
+/* MEDIA */
+$phone: 480;
+$tablet: 767;
+$large: 1024;
+$desktop: 1279;
+
+@mixin phone {
+  @media only screen and (max-width: ($phone * 1px)) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (max-width: ($tablet * 1px)) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media only screen and (max-width: ($large * 1px)) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (max-width: ($desktop * 1px)) {
+    @content;
+  }
+}
