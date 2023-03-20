@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__inner">
+            <a href="#" class="logo">LoremIpsum.<span class="logo__highlight">Net</span></a>
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a href="#" class="menu__list-link menu__list-link--active">Бизнес</a>
+                </li>
+                <li class="menu__list-item">
+                  <a href="#" class="menu__list-link">О нас</a>
+                </li>
+                <li class="menu__list-item">
+                  <a href="#" class="menu__list-link">Цены</a>
+                </li>
+                <li class="menu__list-item">
+                  <a href="#" class="menu__list-link">Оформить заказ</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="splash">
+          <div class="splash__container">
+            <h1 class="splash__title">
+              <span class="splash__title-highlight">Lorem ipsum</span> dolor sit amet consectetur <span class="splash__title-highlight">adipiscing</span>
+            </h1>
+            <div class="splash__description description">
+              <strong class="description__title">At vero eos et accusamus et iusto odio dignissimos ducimus!</strong>
+              <ul class="description__list">
+                <li class="description__list-item">Totam rem aperiam eaque ipsa</li>
+                <li class="description__list-item">Sit voluptatem accusantium doloremque laudantium</li>
+                <li class="description__list-item">Sed ut perspiciatis, unde omnis iste natus error</li>
+              </ul>
+            </div>
+            <div class="splash__buttons">
+              <button class="button button--primary">Заказать</button>
+              <a href="#" class="button button--secondary">Подробнее</a>
+            </div>
+          </div>
+        </section>
+        <div class="main__container">
+          <section class="order">
+            <h2 class="order__title">Оформление <span class="order__title-highlight">Заказа</span></h2>
+            <h3 class="order__notice">Перед заполнением формы ознакомьтесь с нашей схемой работы!</h3>
+            <div class="order__steps">
+              <div class="order__steps-list">
+                <div class="step">
+                  <div class="step__img-wrapper">
+                    <img src="./images/svg/search-ico.svg" class="step__img" />
+                  </div>
+                  <h4 class="step__title">Lorem ipsum dolor sit </br>amet</h4>
+                </div>
+                <div class="step">
+                  <div class="step__img-wrapper">
+                    <img src="./images/svg/percent-ico.svg" class="step__img" />
+                  </div>
+                  <h4 class="step__title">Сonsecteturadipiscing elit</h4>
+                </div>
+                <div class="step">
+                  <div class="step__img-wrapper">
+                    <img src="./images/svg/doc-ico.svg" class="step__img" />
+                  </div>
+                  <h4 class="step__title">Sed do eiusmod tempor</h4>
+                </div>
+                <div class="step">
+                  <div class="step__img-wrapper">
+                    <img src="./images/svg/envelope--w-ico.svg" class="step__img" />
+                  </div>
+                  <h4 class="step__title">Esse cillum dolore eu </br> fugiat</h4>
+                </div>
+                <div class="step">
+                  <div class="step__img-wrapper">
+                    <img src="./images/svg/money-ico.svg" class="step__img" />
+                  </div>
+                  <h4 class="step__title">Excepteur sint occaecat cupidatat non proident</h4>
+                </div>
+              </ul>
+            </div>
+
+            <form class="form order__form" action="#" method="post">
+              <select name="system-type" class="form__select select">
+                <option disabled>Выберите тип системы</option>
+              </select>
+              <input type="email" name="email" placeholder="Ваш e-mail" class="form__input input">
+              <input type="text" name="name" placeholder="Вашe имя" class="form__input input">
+              <div class="input__wrapper">
+                <input type="file" name="file" id="input__file" class="form__input input__file input">
+                <label for="input__file" class="input__file-button">
+                  <span class="input__file-icon-wrapper">
+                    <img class="input__file-icon" src="./images/svg/file-ico.svg" alt="Выбрать файл">
+                  </span>
+                  <span class="input__file-button-text">Прикрепить файл</span>
+               </label>
+              </div>
+              <button class="form__button button button--primary">Отправить</button>
+            </form>
+          </section>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__inner">
+            <div class="footer__copyright copyright">© 2018 «LOREMIPSUM.NET» Все права защищены.</div>
+            <div class="footer__payments payments">
+              <ul class="payments__list">
+                <li class="payments__item">
+                  <img src="./images/svg/qiwi-ico.svg" class="payments__img" alt="qiwi payment">
+                  <span class="payments__title">QIWI wallet</span>
+                </li>
+                <li class="payments__item">
+                  <img src="./images/svg/yandex-ico.svg" class="payments__img" alt="yandex payment">
+                  <span class="payments__title">Yandex money</span>
+                </li>
+                <li class="payments__item">
+                  <img src="./images/svg/webmoney-ico.svg" class="payments__img" alt="webmoney payment">
+                  <span class="payments__title">Web Money</span>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__contacts contacts">
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <img src="./images/svg/envelope-ico.svg" class="contacts__img" alt="Email">
+                  <a href="mailto:info@ipsum228.com" class="contacts__link">info@ipsum228.com</a>
+                </li>
+                <li class="contacts__item">
+                  <img src="./images/svg/vk-ico.svg" class="contacts__img" alt="VK">
+                  <a href="https://vk.com" class="contacts__link" target="_blank">Мы вконтакте</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
