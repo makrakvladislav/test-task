@@ -62,6 +62,10 @@ a {
 input,
 textarea {
   outline: none;
+
+  &:focus {
+    outline: 2px solid $color-secondary;
+  }
 }
 
 .wrapper {

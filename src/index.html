@@ -92,10 +92,16 @@
 
             <form class="form order__form" action="#" method="post">
               <select name="system-type" class="form__select select">
-                <option disabled>Выберите тип системы</option>
+                <option class="select__option" selected disabled>Выберите тип системы</option>
+                <option class="select__option" value="val1">Sed ut perspiciatis</option>
+                <option class="select__option" value="val2">Nemo enim ipsam</option>
+                <option class="select__option" value="val3">Et harum quidem</option>
+                <option class="select__option" value="val4">Temporibus autem</option>
+                <option class="select__option" value="val5">Itaque earum rerum</option>
               </select>
-              <input type="email" name="email" placeholder="Ваш e-mail" class="form__input input">
-              <input type="text" name="name" placeholder="Вашe имя" class="form__input input">
+             
+              <input type="email" name="email" placeholder="Ваш e-mail" class="form__input input" required>
+              <input type="text" name="name" placeholder="Вашe имя" class="form__input input" required>
               <div class="form__range-slider">
                 <div class="form__range-slider-header">
                   <div class="form__range-slider-title">
