@@ -7,7 +7,7 @@
 
   &__input,
   &__select:not(&__input--file) {
-    flex-basis: 370px;
+    flex: 1 0 auto;
   }
 
   &__input {
@@ -19,11 +19,17 @@
   }
 
   &__range-slider {
-    flex-basis: 770px;
+    max-width: 767px;
+    flex-grow: 3;
+    flex-shrink: 0;
     display: flex;
     flex-direction: column;
     row-gap: 20px;
     align-items: center;
+
+    @include tablet {
+      width: 100%;
+    }
 
     &-header {
       display: flex;

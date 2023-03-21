@@ -1,4 +1,5 @@
 @import "../scss/fonts";
+@import "../scss/mixins";
 
 *,
 *::before,
@@ -14,6 +15,10 @@ body {
 [class*="__container"] {
   max-width: 1172px;
   margin: 0 auto;
+
+  @include desktop {
+    padding: 0 15px;
+  }
 }
 
 button {
@@ -76,10 +81,6 @@ textarea {
 
 .main {
   flex: 1 0 auto;
-  background: url("../images/main-bg.png");
-  background-size: contain;
-  background-position: 100% 100%;
-  background-repeat: no-repeat;
 }
 
 .footer {

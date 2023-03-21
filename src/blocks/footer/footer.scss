@@ -6,6 +6,11 @@
   &__inner {
     display: flex;
     align-items: center;
+
+    @include tablet {
+      flex-direction: column;
+      gap: 25px;
+    }
   }
 
   &__copyright {
@@ -19,10 +24,14 @@
     border-left: 1px solid #c3c3c3;
     border-right: 1px solid #c3c3c3;
     margin: 0 38px;
+
+    @include tablet {
+      border: none;
+    }
   }
 
   &__contacts {
-    flex: 1 0 28%;
+    max-width: 100%;
     display: flex;
     align-items: flex-start;
   }
@@ -55,10 +64,22 @@
 }
 
 .contacts {
+  @include large {
+    flex: 1 0 auto;
+  }
+
   &__list {
     justify-content: flex-start;
     gap: 50px;
     row-gap: 15px;
+
+    @include large {
+      flex-direction: column;
+    }
+
+    @include tablet {
+      flex-direction: row;
+    }
   }
   &__link {
     color: $color-text-white;

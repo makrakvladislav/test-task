@@ -7,16 +7,17 @@
   color: $color-text-black;
 
   &__wrapper {
-    flex-basis: 370px;
     position: relative;
     text-align: center;
+    flex-grow: 1;
   }
 
   &__file {
-    opacity: 0;
-    visibility: hidden;
+    width: 100%;
     position: absolute;
     left: 0;
+    opacity: 0;
+    visibility: hidden;
   }
 
   &__file-icon-wrapper {
@@ -32,8 +33,6 @@
   }
 
   &__file-button {
-    width: 100%;
-    max-width: 370px;
     @include padding-rem(12, 5, 12, 5);
     display: flex;
     gap: 10px;

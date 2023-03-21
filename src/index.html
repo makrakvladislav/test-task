@@ -28,6 +28,11 @@
                 </li>
               </ul>
             </nav>
+            <div class="burger">
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+            </div>
           </div>
         </div>
       </header>
@@ -46,13 +51,14 @@
               </ul>
             </div>
             <div class="splash__buttons">
-              <button class="button button--primary">Заказать</button>
+              <a href="#create-order" class="button button--primary">Заказать</a>
               <a href="#" class="button button--secondary">Подробнее</a>
             </div>
           </div>
         </section>
-        <div class="main__container">
-          <section class="order">
+        
+        <section class="order">
+          <div class="order__container">
             <h2 class="order__title">Оформление <span class="order__title-highlight">Заказа</span></h2>
             <h3 class="order__notice">Перед заполнением формы ознакомьтесь с нашей схемой работы!</h3>
             <div class="order__steps">
@@ -90,7 +96,7 @@
               </ul>
             </div>
 
-            <form class="form order__form" action="#" method="post">
+            <form id="create-order" class="form order__form" action="#" method="post">
               <select name="system-type" class="form__select select">
                 <option class="select__option" selected disabled>Выберите тип системы</option>
                 <option class="select__option" value="val1">Sed ut perspiciatis</option>
@@ -102,6 +108,7 @@
              
               <input type="email" name="email" placeholder="Ваш e-mail" class="form__input input" required>
               <input type="text" name="name" placeholder="Вашe имя" class="form__input input" required>
+              
               <div class="form__range-slider">
                 <div class="form__range-slider-header">
                   <div class="form__range-slider-title">
@@ -112,6 +119,7 @@
                 </div>
                 <div id="range-slider" class="range-slider"></div>
               </div>
+              
               <div class="input__wrapper">
                 <input type="file" name="file" id="input__file" class="form__input input__file input">
                 <label for="input__file" class="input__file-button">
@@ -123,8 +131,8 @@
               </div>
               <button type="submit" class="form__button button button--primary">Отправить</button>
             </form>
-          </section>
-        </div>
+          </div>
+        </section>
       </main>
       <footer class="footer">
         <div class="footer__container">

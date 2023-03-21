@@ -1,13 +1,20 @@
 .header {
+  width: 100%;
   @include padding-rem(33, 0, 33, 0);
-  position: sticky;
+  position: fixed;
   z-index: 2;
   top: 0;
   background-color: rgba($color-main, 0.9);
+  transition: 0.2s all;
 
   &__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  &.is-sticky {
+    @include padding-rem(15, 0, 15, 0);
+    background-color: rgba($color-main, 1);
   }
 }
