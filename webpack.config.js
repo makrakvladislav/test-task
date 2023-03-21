@@ -73,6 +73,7 @@ const config = {
           filename: "assets/images/[name][ext]",
         },
       },
+
       {
         test: /\.(svg|ico)$/i,
         type: "asset/resource",
@@ -87,8 +88,39 @@ const config = {
           filename: "assets/fonts/[name][ext]",
         },
       },
+
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        loader: "file-loader",
+        options: {
+          name: "/public/icons/[name].[ext]",
+        },
+        loader: "image-webpack-loader",
+        options: {
+          name: "assets/images/[name][ext]",
+        },
+        options: {
+          mozjpeg: {
+            progressive: true,
+          },
+          optipng: {
+            enabled: false,
+          },
+          pngquant: {
+            quality: [0.65, 0.9],
+            speed: 4,
+          },
+          gifsicle: {
+            interlaced: false,
+          },
+          webp: {
+            quality: 75,
+          },
+        },
+      },
     ],
   },
+
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
   },
