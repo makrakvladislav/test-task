@@ -19,7 +19,7 @@
 }
 
 .nativejs-select {
-  flex: 1 0 auto;
+  flex-basis: 370px;
   position: relative;
   @include font-size(18, 400, 22px);
 
