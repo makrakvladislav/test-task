@@ -769,7 +769,7 @@ textarea:focus {
   height: 0;
 }
 .form__range-slider {
-  max-width: 758px;
+  max-width: 770px;
   flex-grow: 3;
   flex-shrink: 0;
   display: flex;
@@ -992,7 +992,8 @@ textarea:focus {
   background-repeat: no-repeat;
 }
 .order__container {
-  padding: 7.5rem 0.9375rem 9.375rem 0.9375rem;
+  padding-top: 7.5rem;
+  padding-bottom: 9.5rem;
 }
 .order__title {
   margin-bottom: 30px;
